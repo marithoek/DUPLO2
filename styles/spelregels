@@ -1,0 +1,23 @@
+/*Opmaak voor de spelregels*/
+details {
+  background-color: #453f89;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 50px;
+  color: #fff;
+}
+
+details[open] {
+  background-color: #453f89;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 25px;
+  background-color: #453f89;
+}
+
+ul {
+  font-size: 24px;
+}

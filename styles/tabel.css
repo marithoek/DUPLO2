@@ -1,0 +1,138 @@
+/*Algemene opmaak voor de tabel en invoervelden*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tbody {
+  text-align: center;
+}
+
+tr {
+  border-bottom: 1px solid #253887;
+  height: 50px;
+}
+
+th p {
+  margin: 0;
+  padding: 5px 0px 0px 0px;
+  font-size: 24px;
+}
+
+.input_vetgedrukt {
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #00aaad;
+  border-radius: 10px;
+  font-size: 22px;
+  margin-top: 0;
+  width: 90%;
+}
+
+input {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  font-size: 19px;
+}
+
+.witte-input {
+  color: white; /* Witte tekst */
+  font-size: 19px;
+}
+
+/* Maak de eerste rij sticky aan de bovenkant */
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2; /* Zorg ervoor dat de rij boven andere elementen blijft staan */
+  border-bottom: 1px solid #253887;
+  background-color: #fff;
+  height: 40px;
+  vertical-align: bottom;
+  color: black !important;
+  font-size: 28px;
+}
+
+/* Maak de eerste drie kolommen sticky aan de linkerkant */
+/* Hole kolom */
+th:nth-child(1),
+td:nth-child(1) {
+  min-width: 100px;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: #a6caec;
+  border: none;
+  font-size: 22px;
+}
+
+/* Par kolom */
+th:nth-child(2),
+td:nth-child(2) {
+  min-width: 100px;
+  position: sticky;
+  left: 100px;
+  z-index: 1;
+  background-color: #00aaad;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+}
+
+/* Handicap kolom */
+th:nth-child(3),
+td:nth-child(3) {
+  min-width: 100px;
+  position: sticky;
+  left: 200px;
+  z-index: 1;
+  background-color: #156082;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+}
+
+/* -------------------------------------------------------------------------------------------EXTRA LAYOUT ZONDER VOLGORDE*/
+/* Extra: Zorg dat de bovenste cellen in de sticky kolommen niet verdwijnen */
+thead th:nth-child(1),
+thead th:nth-child(2),
+thead th:nth-child(3) {
+  z-index: 3; /* Hoger dan beide de sticky kolommen en rij */
+  background-color: #fff;
+}
+
+/*KLEUREN*/
+/* Geef (alleen) de 'spelerskolommen' omstebeurt een andere kleur */
+td:nth-child(odd):not(:nth-child(-n + 3)):not(tr:nth-child(10) *):not(
+    tr:nth-child(20) *
+  ):not(tr:nth-child(21) *) {
+  background-color: #1ebdb5;
+}
+
+/* Geef rijen OUT en IN een andere achtergrondkleur */
+tr:nth-child(10),
+tr:nth-child(20) {
+  background-color: #253887;
+  color: #fff;
+}
+
+/* Geef rij TOTAL een andere achtergrondkleur */
+tr:nth-child(21) {
+  background-color: #453f89;
+  color: #fff;
+}
+
+/* Zorg dat de 'sticky-cellen' in de IN en OUT rijen dezelfde kleur krijgen */
+tr:nth-child(10) td:nth-child(-n + 3),
+tr:nth-child(20) td:nth-child(-n + 3),
+tr:nth-child(10) th:nth-child(-n + 3),
+tr:nth-child(20) th:nth-child(-n + 3) {
+  background-color: #253887;
+}
+
+/* Zorg dat de 'sticky-cellen' in de TOTAL rij dezelfde kleur krijgen */
+tr:nth-child(21) td:nth-child(-n + 3),
+tr:nth-child(21) th:nth-child(-n + 3) {
+  background-color: #453f89;
+}

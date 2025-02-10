@@ -1,0 +1,50 @@
+/*afbeeldingen */
+/* Standaard verborgen modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 100%;
+  height: 90%;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+/* Wanneer een modal getarget wordt, wordt deze zichtbaar */
+.modal:target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* De inhoud van de modal */
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+/* Afbeelding styling */
+.modal-content img {
+  max-width: 100%;
+  min-width: 400px;
+  height: auto;
+}
+
+/* Sluitknop */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+}

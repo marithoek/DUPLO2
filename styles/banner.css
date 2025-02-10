@@ -1,0 +1,5 @@
+/* Specifieke stijl voor afbeeldingen met de 'banner-img' class */
+.banner-img {
+  max-width: 100%;
+  height: auto;
+}
