@@ -1,0 +1,280 @@
+/*Algemene opmaak voor de body*/
+.body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Algemene stijl voor afbeeldingen */
+img {
+  /* Stijlen die voor alle afbeeldingen gelden */
+}
+
+/* Specifieke stijl voor afbeeldingen met de 'banner-img' class */
+.banner-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Opmaak voor spelersnamen */
+.spelers-titel {
+  margin-bottom: 10px; /* Ruimte onder de h2 */
+  margin-top: 50px;
+  font-size: 26px;
+  color: #00aaad;
+}
+
+.speler {
+  margin-bottom: 5px; /* Ruimte tussen de spelers */
+  font-size: 20px;
+  font-weight: bold;
+  color: #156082;
+}
+
+.speler-input {
+  margin-left: 10px; /* Ruimte tussen de tekst en het invoerveld */
+  border: 2px solid #231b62; /* Rand om het invoerveld */
+  border-radius: 10px; /* Maakt de hoeken afgerond */
+  height: 22px;
+}
+
+/*Opmaak voor de spelregels*/
+details {
+  background-color: #453f89;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 50px;
+  color: #fff;
+}
+
+details[open] {
+  background-color: #453f89;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+ul {
+  font-size: 24px;
+}
+
+/*Algemene opmaak voor de tabel en invoervelden*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tbody {
+  text-align: center;
+}
+
+tr {
+  border-bottom: 1px solid #253887;
+  height: 50px;
+}
+
+th p {
+  margin: 0;
+  padding: 5px 0px 0px 0px;
+  font-size: 24px;
+}
+
+.input_vetgedrukt {
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #00aaad;
+  border-radius: 10px;
+  font-size: 22px;
+  margin-top: 0;
+  width: 90%;
+}
+
+input {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  font-size: 19px;
+}
+
+.witte-input {
+  color: white; /* Witte tekst */
+  font-size: 19px;
+}
+
+/* Maak de eerste rij sticky aan de bovenkant */
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2; /* Zorg ervoor dat de rij boven andere elementen blijft staan */
+  border-bottom: 1px solid #253887;
+  background-color: #fff;
+  height: 40px;
+  vertical-align: bottom;
+  color: black !important;
+  font-size: 28px;
+}
+
+/* Maak de eerste drie kolommen sticky aan de linkerkant */
+/* Hole kolom */
+th:nth-child(1),
+td:nth-child(1) {
+  min-width: 100px;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: #a6caec;
+  border: none;
+  font-size: 22px;
+}
+
+/* Par kolom */
+th:nth-child(2),
+td:nth-child(2) {
+  min-width: 100px;
+  position: sticky;
+  left: 100px;
+  z-index: 1;
+  background-color: #00aaad;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+}
+
+/* Handicap kolom */
+th:nth-child(3),
+td:nth-child(3) {
+  min-width: 100px;
+  position: sticky;
+  left: 200px;
+  z-index: 1;
+  background-color: #156082;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+}
+
+/* Knop naar extern leaderboard */
+.container {
+  display: flex;
+  justify-content: center; /* Horizontaal centreren */
+  align-items: center; /* Verticaal centreren */
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.button {
+  padding: 30px 60px;
+  background-color: #00aaad;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* -------------------------------------------------------------------------------------------EXTRA LAYOUT ZONDER VOLGORDE*/
+/* Extra: Zorg dat de bovenste cellen in de sticky kolommen niet verdwijnen */
+thead th:nth-child(1),
+thead th:nth-child(2),
+thead th:nth-child(3) {
+  z-index: 3; /* Hoger dan beide de sticky kolommen en rij */
+  background-color: #fff;
+}
+
+/*KLEUREN*/
+/* Geef (alleen) de 'spelerskolommen' omstebeurt een andere kleur */
+td:nth-child(odd):not(:nth-child(-n + 3)):not(tr:nth-child(10) *):not(
+    tr:nth-child(20) *
+  ):not(tr:nth-child(21) *) {
+  background-color: #1ebdb5;
+}
+
+/* Geef rijen OUT en IN een andere achtergrondkleur */
+tr:nth-child(10),
+tr:nth-child(20) {
+  background-color: #253887;
+  color: #fff;
+}
+
+/* Geef rij TOTAL een andere achtergrondkleur */
+tr:nth-child(21) {
+  background-color: #453f89;
+  color: #fff;
+}
+
+/* Zorg dat de 'sticky-cellen' in de IN en OUT rijen dezelfde kleur krijgen */
+tr:nth-child(10) td:nth-child(-n + 3),
+tr:nth-child(20) td:nth-child(-n + 3),
+tr:nth-child(10) th:nth-child(-n + 3),
+tr:nth-child(20) th:nth-child(-n + 3) {
+  background-color: #253887;
+}
+
+/* Zorg dat de 'sticky-cellen' in de TOTAL rij dezelfde kleur krijgen */
+tr:nth-child(21) td:nth-child(-n + 3),
+tr:nth-child(21) th:nth-child(-n + 3) {
+  background-color: #453f89;
+}
+
+/*afbeeldingen */
+/* Standaard verborgen modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 100%;
+  height: 90%;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+/* Wanneer een modal getarget wordt, wordt deze zichtbaar */
+.modal:target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* De inhoud van de modal */
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+/* Afbeelding styling */
+.modal-content img {
+  max-width: 100%;
+  min-width: 400px;
+  height: auto;
+}
+
+/* Sluitknop */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+}

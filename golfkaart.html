@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- Banner afbeelding -->
+    <div class="logo_banner">
+      <img
+        src="images/deco/DUX-Golf-banner.jpg"
+        alt="DUX Golf logo"
+        class="banner-img"
+      />
+    </div>
+    <!-- Dropdown spelregels -->
+    <details>
+      <summary>
+        <strong>Spelregels</strong>
+      </summary>
+      <ul>
+        <li>Alle spelers slaan bij elke hole af.</li>
+        <li>
+          Vervolgens kiest het team gezamenlijk de beste van de vier ballen om
+          mee verder te spelen.
+        </li>
+        <li>
+          Vanaf de gekozen positie slaan alle vier spelers opnieuw (de andere
+          drie spelers droppen hun bal binnen één stoklengte van de gekozen
+          positie).
+        </li>
+        <li>
+          Elke speler speelt steeds verder met zijn eigen bal. Na iedere slag
+          kiest het team weer de beste bal, totdat de hole is uitgespeeld.
+        </li>
+        <li>
+          Op deze manier wordt per hole een teamscore genoteerd. Dit is een
+          relatief snelle spelvorm en wordt meestal gespeeld in de
+          Stableford-variant.
+        </li>
+      </ul>
+    </details>
+    <!-- Namen van spelers -->
+    <h2 class="spelers-titel">Spelers:</h2>
+    <p class="speler">
+      Speler 1: <input type="text" name="speler1" class="speler-input" />
+    </p>
+    <p class="speler">
+      Speler 2: <input type="text" name="speler2" class="speler-input" />
+    </p>
+    <p class="speler">
+      Speler 3: <input type="text" name="speler3" class="speler-input" />
+    </p>
+    <p class="speler">
+      Speler 4: <input type="text" name="speler3" class="speler-input" />
+    </p>
+    <table>
+      <!-- Tabel headers -->
+      <thead>
+        <tr>
+          <th>Hole</th>
+          <th>Par</th>
+          <th>Hcp</th>
+          <th>
+            <p>Teamnaam:</p>
+            <input type="text" name="naam1" class="input_vetgedrukt" />
+          </th>
+        </tr>
+      </thead>
+      <!-- Tabel rijen -->
+      <tbody>
+        <!-- Hole 1 -->
+        <tr>
+          <td><a href="#image1">1</a></td>
+          <td>4</td>
+          <td>8</td>
+          <td><input type="number" name="punten1_1" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 2-->
+        <tr>
+          <td>2</td>
+          <td>4</td>
+          <td>10</td>
+          <td><input type="number" name="punten1_2" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 3-->
+        <tr>
+          <td>3</td>
+          <td>4</td>
+          <td>14</td>
+          <td><input type="number" name="punten1_3" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 4-->
+        <tr>
+          <td>4</td>
+          <td>3</td>
+          <td>18</td>
+          <td><input type="number" name="punten1_4" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 5-->
+        <tr>
+          <td>5</td>
+          <td>5</td>
+          <td>12</td>
+          <td><input type="number" name="punten1_5" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 6-->
+        <tr>
+          <td>6</td>
+          <td>4</td>
+          <td>16</td>
+          <td><input type="number" name="punten1_6" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 7-->
+        <tr>
+          <td>7</td>
+          <td>4</td>
+          <td>2</td>
+          <td><input type="number" name="punten1_7" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 8-->
+        <tr>
+          <td>8</td>
+          <td>4</td>
+          <td>4</td>
+          <td><input type="number" name="punten1_8" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 9-->
+        <tr>
+          <td>9</td>
+          <td>4</td>
+          <td>6</td>
+          <td><input type="number" name="punten1_9" step="1" min="0" /></td>
+        </tr>
+        <!-- OUT-->
+        <tr>
+          <td></td>
+          <th>OUT</th>
+          <td></td>
+          <td>
+            <input
+              type="number"
+              class="witte-input"
+              name="OUT1"
+              step="1"
+              min="0"
+            />
+          </td>
+        </tr>
+        <!-- Hole 10-->
+        <tr>
+          <td>10</td>
+          <td>5</td>
+          <td>9</td>
+          <td><input type="number" name="punten1_10" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 11-->
+        <tr>
+          <td>11</td>
+          <td>3</td>
+          <td>17</td>
+          <td><input type="number" name="punten1_11" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 12-->
+        <tr>
+          <td>12</td>
+          <td>5</td>
+          <td>1</td>
+          <td><input type="number" name="punten1_12" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 13-->
+        <tr>
+          <td>13</td>
+          <td>3</td>
+          <td>15</td>
+          <td><input type="number" name="punten1_13" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 14-->
+        <tr>
+          <td>14</td>
+          <td>4</td>
+          <td>3</td>
+          <td><input type="number" name="punten1_14" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 15-->
+        <tr>
+          <td>15</td>
+          <td>3</td>
+          <td>11</td>
+          <td><input type="number" name="punten1_15" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 16-->
+        <tr>
+          <td>16</td>
+          <td>4</td>
+          <td>5</td>
+          <td><input type="number" name="punten1_16" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 17-->
+        <tr>
+          <td>17</td>
+          <td>4</td>
+          <td>13</td>
+          <td><input type="number" name="punten1_17" step="1" min="0" /></td>
+        </tr>
+        <!-- Hole 18-->
+        <tr>
+          <td>18</td>
+          <td>4</td>
+          <td>7</td>
+          <td><input type="number" name="punten1_18" step="1" min="0" /></td>
+        </tr>
+        <!-- IN-->
+        <tr>
+          <td></td>
+          <th>IN</th>
+          <td></td>
+          <td>
+            <input
+              type="number"
+              class="witte-input"
+              name="IN1"
+              step="1"
+              min="0"
+            />
+          </td>
+        </tr>
+        <!-- TOTAL-->
+        <tr>
+          <td></td>
+          <th>TOTAL</th>
+          <td></td>
+          <td>
+            <input
+              type="number"
+              class="witte-input"
+              name="TOTAL1"
+              step="1"
+              min="0"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Knop naar extern leaderboard -->
+    <div class="container">
+      <a href="https://voorbeeld.com" class="button">Leaderboard</a>
+    </div>
+
+    <!-- Afbeelding weergave -->
+    <div id="image1" class="modal">
+      <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <img src="images/holes/hole1.png" alt="Hole 1" />
+      </div>
+    </div>
+  </body>
+</html>
