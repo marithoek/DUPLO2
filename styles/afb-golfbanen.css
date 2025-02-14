@@ -4,7 +4,7 @@
   display: none;
   position: fixed;
   top: 50px;
-  right: 0;
+  margin-left: 0px;
   width: 100%;
   height: 90%;
   z-index: 4;
@@ -15,7 +15,8 @@
 /* Wanneer een modal getarget wordt, wordt deze zichtbaar */
 .modal:target {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 30px;
   align-items: center;
 }
 
@@ -31,8 +32,8 @@
 
 /* Afbeelding styling */
 .modal-content img {
-  max-width: 100%;
-  min-width: 400px;
+  max-width: 90%;
+  min-width: 300px;
   height: auto;
 }
 
@@ -40,7 +41,7 @@
 .close {
   position: absolute;
   top: 20px;
-  right: 20px;
+  left: 20px;
   font-size: 30px;
   text-decoration: none;
   color: white;

@@ -1,7 +1,8 @@
 /*Algemene opmaak voor de tabel en invoervelden*/
 table {
-  width: 100%;
+  width: 80%;
   border-collapse: collapse;
+  margin-top: 50px;
 }
 
 tbody {
@@ -58,7 +59,7 @@ thead th {
 /* Hole kolom */
 th:nth-child(1),
 td:nth-child(1) {
-  min-width: 100px;
+  min-width: 40px;
   position: sticky;
   left: 0;
   z-index: 1;
@@ -70,9 +71,9 @@ td:nth-child(1) {
 /* Par kolom */
 th:nth-child(2),
 td:nth-child(2) {
-  min-width: 100px;
+  min-width: 40px;
   position: sticky;
-  left: 100px;
+  left: 40px;
   z-index: 1;
   background-color: #00aaad;
   border: none;
@@ -83,9 +84,9 @@ td:nth-child(2) {
 /* Handicap kolom */
 th:nth-child(3),
 td:nth-child(3) {
-  min-width: 100px;
+  min-width: 40px;
   position: sticky;
-  left: 200px;
+  left: 80px;
   z-index: 1;
   background-color: #156082;
   border: none;
@@ -102,37 +103,14 @@ thead th:nth-child(3) {
   background-color: #fff;
 }
 
-/*KLEUREN*/
-/* Geef (alleen) de 'spelerskolommen' omstebeurt een andere kleur */
-td:nth-child(odd):not(:nth-child(-n + 3)):not(tr:nth-child(10) *):not(
-    tr:nth-child(20) *
-  ):not(tr:nth-child(21) *) {
-  background-color: #1ebdb5;
-}
-
-/* Geef rijen OUT en IN een andere achtergrondkleur */
-tr:nth-child(10),
-tr:nth-child(20) {
-  background-color: #253887;
-  color: #fff;
-}
-
 /* Geef rij TOTAL een andere achtergrondkleur */
-tr:nth-child(21) {
+tr:nth-child(10) {
   background-color: #453f89;
   color: #fff;
 }
 
-/* Zorg dat de 'sticky-cellen' in de IN en OUT rijen dezelfde kleur krijgen */
-tr:nth-child(10) td:nth-child(-n + 3),
-tr:nth-child(20) td:nth-child(-n + 3),
-tr:nth-child(10) th:nth-child(-n + 3),
-tr:nth-child(20) th:nth-child(-n + 3) {
-  background-color: #253887;
-}
-
 /* Zorg dat de 'sticky-cellen' in de TOTAL rij dezelfde kleur krijgen */
-tr:nth-child(21) td:nth-child(-n + 3),
-tr:nth-child(21) th:nth-child(-n + 3) {
+tr:nth-child(10) td:nth-child(-n + 3),
+tr:nth-child(10) th:nth-child(-n + 3) {
   background-color: #453f89;
 }

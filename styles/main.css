@@ -4,7 +4,13 @@
 @import url("tabel.css");
 @import url("leaderbord-knop.css");
 @import url("afb-golfbanen.css");
+@import url("telefoonscherm.css");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /*Algemene opmaak voor de body*/
 .body {
   font-family: Arial, sans-serif;

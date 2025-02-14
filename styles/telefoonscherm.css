@@ -1,0 +1,6 @@
+/* AANPASSEN TELEFOONSCHERM */
+
+/* Bij een breedte minder dan 390px beginnen alle elementen buiten de tabel om te verkleinen. 
+Hier worden extra aanpassingen gemaakt zodat deze de breedte van het scherm blijven vullen */
+@media screen and (max-width: 390px) {
+}
