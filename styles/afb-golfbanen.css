@@ -1,10 +1,11 @@
 /*afbeeldingen */
 /* Standaard verborgen modal */
 .modal {
+  margin-left: 0px;
+  padding: 0px;
   display: none;
   position: fixed;
   top: 50px;
-  margin-left: 0px;
   width: 100%;
   height: 90%;
   z-index: 4;
@@ -14,17 +15,19 @@
 
 /* Wanneer een modal getarget wordt, wordt deze zichtbaar */
 .modal:target {
+  margin: 0px;
+  padding-left: 30px;
   display: flex;
   justify-content: flex-start;
-  padding-left: 30px;
   align-items: center;
 }
 
 /* De inhoud van de modal */
 .modal-content {
+  margin: 0px;
+  padding: 20px;
   position: relative;
   background: white;
-  padding: 20px;
   max-width: 90%;
   max-height: 90%;
   overflow: auto;
@@ -32,6 +35,8 @@
 
 /* Afbeelding styling */
 .modal-content img {
+  margin: 0px;
+  padding: 0px;
   max-width: 90%;
   min-width: 300px;
   height: auto;
@@ -39,6 +44,8 @@
 
 /* Sluitknop */
 .close {
+  margin: 0px;
+  padding: 5px 10px;
   position: absolute;
   top: 20px;
   left: 20px;
@@ -46,6 +53,5 @@
   text-decoration: none;
   color: white;
   background: black;
-  padding: 5px 10px;
   border-radius: 5px;
 }

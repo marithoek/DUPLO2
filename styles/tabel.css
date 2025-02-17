@@ -1,49 +1,64 @@
 /*Algemene opmaak voor de tabel en invoervelden*/
 table {
+  margin-top: 50px;
+  padding: 0px;
   width: 80%;
   border-collapse: collapse;
-  margin-top: 50px;
 }
 
 tbody {
+  margin: 0px;
+  padding: 0px;
   text-align: center;
 }
 
 tr {
+  margin: 0px;
+  padding: 0px;
   border-bottom: 1px solid #253887;
   height: 50px;
 }
 
 th p {
-  margin: 0;
+  margin: 0px;
   padding: 5px 0px 0px 0px;
   font-size: 24px;
 }
 
-.input_vetgedrukt {
-  font-weight: bold;
-  text-align: center;
-  border: 2px solid #00aaad;
-  border-radius: 10px;
-  font-size: 22px;
-  margin-top: 0;
-  width: 90%;
-}
-
+/*Standaard invoerveld met zwart lettertype*/
 input {
+  margin: 0px;
+  padding: 0px;
   text-align: center;
   background-color: transparent;
   border: none;
   font-size: 19px;
 }
 
+/*Invoerveld met witte lettertype voor een donkere achtergrond*/
 .witte-input {
-  color: white; /* Witte tekst */
+  margin: 0px;
+  padding: 0px;
+  color: white;
   font-size: 19px;
 }
 
-/* Maak de eerste rij sticky aan de bovenkant */
+/*Maak invoerveld voor teamnaam vetgedrukt*/
+.input_vetgedrukt {
+  margin-top: 0;
+  padding: 0px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #00aaad;
+  border-radius: 10px;
+  font-size: 22px;
+  width: 90%;
+}
+
+/*Opmaak en het 'sticky' maken van de eerste rij*/
 thead th {
+  margin: 0px;
+  padding: 0px;
   position: sticky;
   top: 0;
   z-index: 2; /* Zorg ervoor dat de rij boven andere elementen blijft staan */
@@ -55,10 +70,12 @@ thead th {
   font-size: 28px;
 }
 
-/* Maak de eerste drie kolommen sticky aan de linkerkant */
+/* ---------------------------------------------opmaak en 'sticky' voor de eerste drie kolommen*/
 /* Hole kolom */
 th:nth-child(1),
 td:nth-child(1) {
+  margin: 0px;
+  padding: 0px;
   min-width: 40px;
   position: sticky;
   left: 0;
@@ -71,6 +88,8 @@ td:nth-child(1) {
 /* Par kolom */
 th:nth-child(2),
 td:nth-child(2) {
+  margin: 0px;
+  padding: 0px;
   min-width: 40px;
   position: sticky;
   left: 40px;
@@ -84,6 +103,8 @@ td:nth-child(2) {
 /* Handicap kolom */
 th:nth-child(3),
 td:nth-child(3) {
+  margin: 0px;
+  padding: 0px;
   min-width: 40px;
   position: sticky;
   left: 80px;
@@ -94,17 +115,21 @@ td:nth-child(3) {
   font-size: 22px;
 }
 
-/* -------------------------------------------------------------------------------------------EXTRA LAYOUT ZONDER VOLGORDE*/
+/* ------------------------------------------------------------------------------------------------*/
 /* Extra: Zorg dat de bovenste cellen in de sticky kolommen niet verdwijnen */
 thead th:nth-child(1),
 thead th:nth-child(2),
 thead th:nth-child(3) {
+  margin: 0px;
+  padding: 0px;
   z-index: 3; /* Hoger dan beide de sticky kolommen en rij */
   background-color: #fff;
 }
 
 /* Geef rij TOTAL een andere achtergrondkleur */
 tr:nth-child(10) {
+  margin: 0px;
+  padding: 0px;
   background-color: #453f89;
   color: #fff;
 }
@@ -112,5 +137,7 @@ tr:nth-child(10) {
 /* Zorg dat de 'sticky-cellen' in de TOTAL rij dezelfde kleur krijgen */
 tr:nth-child(10) td:nth-child(-n + 3),
 tr:nth-child(10) th:nth-child(-n + 3) {
+  margin: 0px;
+  padding: 0px;
   background-color: #453f89;
 }

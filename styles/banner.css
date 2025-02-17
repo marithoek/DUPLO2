@@ -1,5 +1,7 @@
-/* Specifieke stijl voor afbeeldingen met de 'banner-img' class */
+/*Opmaak voor het dux golf logo*/
 .banner-img {
+  margin: 0px;
+  padding: 0px;
   max-width: 100%;
   height: auto;
 }

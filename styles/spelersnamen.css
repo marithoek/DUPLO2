@@ -1,23 +1,29 @@
 /* Opmaak voor spelersnamen */
+/*'Spelers' titel*/
 .spelers-titel {
-  margin-bottom: 10px; /* Ruimte onder de h2 */
+  margin-bottom: 10px;
   margin-top: 50px;
   margin-left: 10px;
+  padding: 0px;
   font-size: 26px;
   color: #00aaad;
 }
 
+/* Opmaak voor de tekst voor het invoerveld */
 .speler {
-  margin-bottom: 5px; /* Ruimte tussen de spelers */
+  margin-bottom: 5px;
   margin-left: 10px;
+  padding: 0px;
   font-size: 20px;
   font-weight: bold;
   color: #156082;
 }
 
+/* Invoerveld voor spelersnamen */
 .speler-input {
   margin-left: 10px; /* Ruimte tussen de tekst en het invoerveld */
-  border: 2px solid #231b62; /* Rand om het invoerveld */
+  padding: 0px;
+  border: 2px solid #231b62;
   border-radius: 10px; /* Maakt de hoeken afgerond */
   height: 22px;
 }

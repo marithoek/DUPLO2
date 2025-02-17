@@ -1,18 +1,20 @@
 /*Opmaak voor de spelregels*/
 details {
+  margin: 0px;
+  padding: 10px 50px 10px 10px;
   background-color: #453f89;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 50px;
   color: #fff;
 }
 
 details[open] {
+  margin: 0px;
+  padding: 0px;
   background-color: #453f89;
 }
 
 summary {
+  margin: 0px;
+  padding: 0px;
   font-weight: bold;
   font-size: 25px;
   background-color: #453f89;
@@ -20,7 +22,7 @@ summary {
 
 ul {
   margin-top: 15px;
+  padding-left: 20px;
   font-size: 24px;
   list-style-type: disc;
-  padding-left: 20px;
 }

@@ -1,13 +1,15 @@
 /* Knop naar extern leaderboard */
 .container {
-  display: flex;
-  justify-content: center; /* Horizontaal centreren */
-  align-items: center; /* Verticaal centreren */
   margin-top: 80px;
   margin-bottom: 80px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
+  margin: 0px;
   padding: 30px 60px;
   background-color: #00aaad;
   color: white;
@@ -20,5 +22,7 @@
 }
 
 .button:hover {
+  margin: 0px;
+  padding: 0px;
   background-color: #0056b3;
 }
