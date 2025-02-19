@@ -8,10 +8,11 @@ details {
 
 details[open] {
   margin: 0px;
-  padding: 0px;
+  padding-top: 10px;
   background-color: #453f89;
 }
 
+/*Titel voor het uitklapbare element*/
 summary {
   margin: 0px;
   padding: 0px;
@@ -20,6 +21,7 @@ summary {
   background-color: #453f89;
 }
 
+/*Opmaak voor de bullet points*/
 ul {
   margin-top: 15px;
   padding-left: 20px;

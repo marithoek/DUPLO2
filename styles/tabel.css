@@ -2,7 +2,6 @@
 table {
   margin-top: 50px;
   padding: 0px;
-  width: 80%;
   border-collapse: collapse;
 }
 
@@ -33,6 +32,9 @@ input {
   background-color: transparent;
   border: none;
   font-size: 19px;
+  border: 2px solid #a6caec;
+  border-radius: 10px;
+  width: 70%;
 }
 
 /*Invoerveld met witte lettertype voor een donkere achtergrond*/
@@ -45,7 +47,7 @@ input {
 
 /*Maak invoerveld voor teamnaam vetgedrukt*/
 .input_vetgedrukt {
-  margin-top: 0;
+  margin-bottom: 10px;
   padding: 0px;
   font-weight: bold;
   text-align: center;
